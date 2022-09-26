@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: inherit;
+            font: inherit;
+        }
+        body {
+            line-height: 1;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        header .top {
+            position: relative;
+            height: 200px;
+            background: #ccc;
+            display: flex;
+            justify-content: space-between;
+        }
+        header .top h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        header .bottom {
+            background: hotpink;
+        }
+        header .bottom ul {
+            display: flex;
+            line-height: 30px;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        main {
+            width: 800px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1><a href="">logo</a></h1>
+            <a href="" class="social sns">sns</a>
+            <a href="" class="social login">login</a>
+        </div>
+        <nav class="bottom">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <style>
+            .box1 {
+                padding: 10px;
+                background: #ccc;
+                margin-bottom: 10px;
+            }
+            .box1 .top {
+                background: #fff;
+                height: 150px;
+                margin-bottom: 10px;
+            }
+            .box1 .bottom {
+                padding: 10px;
+                background: #fff;
+                display: flex;
+                /* justify-content: space-between; */
+                gap: 10px;
+            }
+            .box1 .bottom .left {
+                display: flex;
+                gap: 10px;
+                /* width: calc(100% - 160px); */
+                flex: 1;
+                flex-wrap: wrap;
+            }
+            .box1 .bottom .left li {
+                width: calc((100% - 20px) / 3);
+                height: 100px;
+                background: #ccc;
+            }
+            .box1 .bottom .right {
+                width: 150px;
+                background: #ddd;
+            }
+        </style>
+        <section class="box1">
+            <div class="top">top</div>
+            <div class="bottom">
+                <ul class="left">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <div class="right">right</div>
+            </div>
+        </section>
+        <style>
+            .box2 {
+                padding: 10px;
+                background: #ccc;
+            }
+            .box2 li+li {
+                margin-top: 10px;
+            }
+            .box2 a {
+                display: flex;
+            }
+            .box2 img {
+                width: 150px;
+                height: 150px;
+                margin-right: 10px;
+            }
+            .box2 p {
+                flex: 1;
+                background: #fff;
+            }
+        </style>
+        <section class="box2">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="https://ssl.pstatic.net/melona/libs/1412/1412685/7c63c931230a870c496d_20220920114321298_1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://ssl.pstatic.net/melona/libs/1412/1412685/7c63c931230a870c496d_20220920114321298_1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://ssl.pstatic.net/melona/libs/1412/1412685/7c63c931230a870c496d_20220920114321298_1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://ssl.pstatic.net/melona/libs/1412/1412685/7c63c931230a870c496d_20220920114321298_1.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

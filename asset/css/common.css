@@ -1,0 +1,61 @@
+.blind {
+    position: absolute;
+    width: 1px;height: 1px;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+
+.common-inner {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+#skipNav {
+    position: relative;
+    z-index: 3000
+}
+
+#skipNav a {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 138px;
+    border: 1px solid #4ec53d;
+    background: #333;
+    text-align: center
+}
+
+#skipNav a:active,
+#skipNav a:focus {
+    top: 0;
+    text-decoration: none;
+    z-index: 1000
+}
+
+#skipNav span {
+    display: inline-block;
+    padding: 2px 6px 0 0;
+    font-size: 13px;
+    line-height: 26px;
+    color: #fff;
+    letter-spacing: -1px;
+    white-space: nowrap
+}
+
+/* btn */
+.link-detail {
+    display: block;
+    width: 190px;
+    height: 50px;
+    border: 2px solid #222;
+    text-align: center;
+    line-height: 46px;/* border size minus */
+    transition: all 0.3s;
+}
+
+.link-detail:hover {
+    background: #222;
+    color: #fff;
+}

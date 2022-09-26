@@ -1,0 +1,100 @@
+
+
+.sc-visual {
+    position: relative;
+}
+.sc-visual .slide{
+    /* text-align: center; m0-auto image에 있어서 */
+    display: block;
+    
+}
+.sc-visual .slide img{
+    /* 100%를 원하는지, 최소 얼마까지 원하는지... 여쭈어보기 왜냐면 화살표 고정으로 해야하는데,,, */
+    /* width: 100%; */
+    margin: 0 auto;
+
+}
+
+.sc-visual .btn-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 23px;
+    height: 40px;
+    background: #f00;
+    
+}
+.sc-visual .btn-nav.prev {
+    margin-left: -623px;
+    /* tftx는 없으니깜 */
+}
+.sc-visual .btn-nav.next {
+    margin-left: 600px;
+}
+
+
+
+/*  */
+
+.headline {
+    font-size: 42px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.sc-intro {}
+
+.sc-intro .content{}
+.sc-intro .headline{
+    padding: 85px 0 64px;
+}
+.sc-intro .inner{
+    display: flex;
+    justify-content: space-between;
+}
+.sc-intro .inner.reverse{
+    flex-direction: row-reverse;
+}
+
+.sc-intro .img-box{}
+.sc-intro .img-box img{}
+
+.sc-intro .text-box{
+    width: 510px;
+}
+.sc-intro .text-box p {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 42px 0 45px;
+}
+
+.sc-intro .link-detail{}
+
+
+
+.sc-recomm {
+
+}
+
+.sc-recomm .content{
+    position: relative;
+    color: #fff;
+    padding: 93px 0;
+}
+.sc-recomm .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.sc-recomm .text-box{
+    width: 370px;
+    height: 330px;
+    background: rgba(0,0,0,.5);
+}
+
+/* 영문폰트, 화살표, sns 삐죽 튀어나온거, 여백, best review 화살표 위치, news 여백과 lh 그리고 더보기 칸, 푸터 높이 노노 여백으로!! */
